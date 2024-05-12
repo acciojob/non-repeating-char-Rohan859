@@ -1,7 +1,7 @@
 function firstNonRepeatedChar(str) 
 {
  // Write your code here
-	let freq[]={};
+	let freq={};
 	for(let ch of str)
 	{
 		//let index=ch-'a';
