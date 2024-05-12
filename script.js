@@ -14,8 +14,8 @@ function firstNonRepeatedChar(str)
 
 	for(let ch of str)
 		{
-			let idx=ch-'a';
-			if(freq[idx]==1)
+			//let idx=ch-'a';
+			if(freq[ch]==1)
 			{
 				return ch;
 			}
