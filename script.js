@@ -4,8 +4,12 @@ function firstNonRepeatedChar(str)
 	let freq[]={};
 	for(let ch of str)
 	{
-		let index=ch-'a';
-		freq[index]++;
+		//let index=ch-'a';
+		if (freq[ch]) {
+			freq[ch]++;
+		} else {
+			freq[ch]=1;
+		}
 	}
 
 	for(let ch of str)
@@ -20,5 +24,6 @@ function firstNonRepeatedChar(str)
 }
 
 const input = prompt("Enter a string");
+
 alert(firstNonRepeatedChar(input)); 
 
